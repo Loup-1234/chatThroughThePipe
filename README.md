@@ -1,4 +1,4 @@
-# 💬 ChatThroughThePipe
+# 💬 Chat through the pipe
 
 A lightweight **peer-to-peer chat app** built in **C++**, featuring a minimal graphical interface using **raylib** and **raygui**.
 

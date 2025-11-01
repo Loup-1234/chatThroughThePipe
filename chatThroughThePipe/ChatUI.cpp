@@ -8,6 +8,10 @@ ChatUI::ChatUI(Chat& session, const char* windowTitle) : chatSession(session)
 	InitWindow((int)screenWidth, (int)screenHeight, windowTitle);
 	SetTargetFPS(60);
 
+	Image icon = LoadImage("chat.png");
+	SetWindowIcon(icon);
+	UnloadImage(icon);
+
 	GuiLoadStyle("style_cyber.rgs");
 }
 
@@ -46,7 +50,10 @@ ChatSettings ChatUI::RunSettingsMenu()
 	InitWindow(menuWidth, menuHeight, "Chat Settings");
 	SetTargetFPS(60);
 
-	// Charger le style (important de le faire aussi ici)
+	Image icon = LoadImage("chat.png");
+	SetWindowIcon(icon);
+	UnloadImage(icon);
+
 	GuiLoadStyle("style_cyber.rgs");
 
 	// Buffers pour les champs de texte

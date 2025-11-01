@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="chatThroughThePipe/chatThroughThePipe.vcxproj" Id="9a80ae61-6061-49bc-ab84-48af36ed052e" />
+</Solution>

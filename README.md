@@ -2,6 +2,16 @@
 
 A lightweight **peer-to-peer chat app** built in **C++**, featuring a minimal graphical interface using **raylib** and **raygui**.
 
+> [!WARNING]
+> This project is currently **under development**. It may contain bugs, incomplete features, and unstable behavior related to threading or socket management.
+>
+> Known issues include:
+>
+> * 🧊 The application may **freeze** when closing the window if network threads are not properly terminated.
+> * ⚠️ Limited **error handling** and **security** features.
+>
+> Use this software **for testing and development purposes only**.
+
 ## ✨ Features
 
 * 🔄 **Peer-to-Peer** – Each instance acts as both sender and receiver.
@@ -27,24 +37,12 @@ You can skip the GUI and launch directly:
 ./ChatThroughThePipe <Peer_IP> <Local_Receiver_Port> <Remote_Sender_Port>
 ```
 
-**Example (Local Test):**
+Example (Local Test):
 
 ```bash
 ./ChatThroughThePipe 127.0.0.1 27015 27016
 ./ChatThroughThePipe 127.0.0.1 27016 27015
 ```
-
-## ⚠️ Developer Notice
-
-> [!WARNING]
-> This project is currently **under development**. It may contain bugs, incomplete features, and unstable behavior related to threading or socket management.
->
-> Known issues include:
->
-> * 🧊 The application may **freeze** when closing the window if network threads are not properly terminated.
-> * ⚠️ Limited **error handling** and **security** features.
->
-> Use this software **for testing and development purposes only**.
 
 ## 🛠️ Dependencies
 
@@ -57,7 +55,7 @@ Make sure the following libraries are available before building:
   * *Winsock* → for Windows
   * *BSD Sockets* → for Linux/macOS
 
-## 📝 Roadmap / To-Do
+## 📝 To-Do
 
 * [ ] Improve shutdown handling for clean thread termination
 * [ ] Add robust connection error handling
